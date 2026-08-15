@@ -46,6 +46,7 @@
 | prompt-engineer | 系统化提示词工程：角色模板、少样本、思维链、结构化输出 | 未知 | 2026-08-15 |
 | storyboard-prompting | 分镜帧图片提示词（Midjourney/DALL-E/SD），六段式结构保证电影感 | 未知 · SK-FTV-005 | 2026-08-15 |
 | director-shot-prompt | 导演镜头提示词：图片映射四类镜头角色，生成流畅转场视频 prompt | 本地项目 xxs-xs | 2026-08-15 |
+| douyin-downloader | 抖音无水印视频下载：ttwid 匿名 cookie + 签名 API，无需登录，实测 2-6MB/s | JoeanAmier/TikTokDownloader | 2026-08-15 |
 
 > 已移除：ex-xiaoxiaoting、shot-transition-script（2026-08-15 用户要求下架）
 
