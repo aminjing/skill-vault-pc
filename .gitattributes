@@ -1,0 +1,7 @@
+# 统一行尾：md/文本文件按 LF 入库，Obsidian(CRLF) 写入自动规范化
+* text=auto
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
