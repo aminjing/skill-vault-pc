@@ -11,3 +11,7 @@
 | storyboard-prompting | 分镜帧图片提示词（Midjourney/DALL-E/SD），六段式结构保证电影感 | 未知 · SK-FTV-005 | 2026-08-15 |
 | director-shot-prompt | 导演镜头提示词：图片映射四类镜头角色，生成流畅转场视频 prompt | 本地项目 xxs-xs | 2026-08-15 |
 | douyin-downloader | 抖音无水印视频下载：ttwid 匿名 cookie + 签名 API，无需登录，实测 2-6MB/s | JoeanAmier/TikTokDownloader | 2026-08-15 |
+| zine-summary-collection | 52 个 zine/艺术海报 Codex Skill 合集索引（样图+地址+作者），选型入口 | tluy/skill-zine-summary | 2026-08-15 |
+| gc-minimal-zine-poster | 诗性纸感留白微编辑海报：大留白+微拼贴+实验排版+单一强调色，含完整风格系统与 prompt 编译器 | LiamGvchi · 6129⭐ | 2026-08-15 |
+| photo-to-zine-postcard | 照片→双面 2:3 zine 明信片：原图保留+手绘母题+元数据+三色票，实测 7/7 验收通过 | Whiplashzeb · v3.3 | 2026-08-15 |
+| gathered-scenes-zine | 照片蒸馏成 zine 场景（scene-distillation + scenes-gathered 双子 skill） | Zeejay0 | 2026-08-15 |
