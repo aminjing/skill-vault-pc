@@ -15,6 +15,15 @@
 2. 运行 `python Z:\chang-yong\.tools\download_douyin.py <分享链接> <输出目录>`（Python 环境：`Z:\chang-yong\.tools\TikTokDownloader` 的 uv venv，命令 `cd Z:\chang-yong\.tools\TikTokDownloader && uv run python ../download_douyin.py ...`）
 3. 视频自动存为 `<日期>_<标题>_<video_id>.mp4`（标题自动清洗非法字符）
 
+## 登录态高清下载（可选）
+
+有登录 cookie 时（浏览器 F12 → Network → 请求头 `Cookie:` 整行，存到 `Z:\chang-yong\.tools\douyin_cookie.txt`）：
+
+1. 运行 `uv run python ../download_douyin_hd.py <链接> <目录>`
+2. 脚本枚举全部码率档并自动选最高（实测 2026-08-15: 源 720p 的视频登录态无更高档位，仅码率微升 0-7%）
+
+**经验**：抖音视频清晰度上限由**发布源**决定（720p 源就 720p 到底），登录 cookie 只对部分 1080p+ 源有效。想要"效果更好"只能 AI 超分（见备选方案）。
+
 ## 依赖
 
 - 本机部署：`Z:\chang-yong\.tools\TikTokDownloader`（uv sync 完成）+ `download_douyin.py`（ttwid 匿名 cookie + Detail API）
