@@ -15,3 +15,6 @@
 | gc-minimal-zine-poster | 诗性纸感留白微编辑海报：大留白+微拼贴+实验排版+单一强调色，含完整风格系统与 prompt 编译器 | LiamGvchi · 6129⭐ | 2026-08-15 |
 | photo-to-zine-postcard | 照片→双面 2:3 zine 明信片：原图保留+手绘母题+元数据+三色票，实测 7/7 验收通过 | Whiplashzeb · v3.3 | 2026-08-15 |
 | gathered-scenes-zine | 照片蒸馏成 zine 场景（scene-distillation + scenes-gathered 双子 skill） | Zeejay0 | 2026-08-15 |
+| cc2image | 中文配图生成器：49 套内容风格+8 套 logo 风格，知识图解/封面/批量生图，实测 5/5 | izscc · 160⭐ | 2026-08-15 |
+| power-design | 品牌原生 HTML 设计：20 条可量化幻灯片规则+25+ 品牌风格，生成不像 AI 做的 deck | ItsssssJack · 612⭐ | 2026-08-15 |
+| blcaptain-style | 中文图文卡片组图：内容→小红书/公众号卡片（静纸/证据/桥三套视觉语言），引擎渲染 | dososo · 145⭐ | 2026-08-15 |
