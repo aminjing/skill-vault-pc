@@ -10,5 +10,3 @@
 | prompt-engineer | 系统化提示词工程：角色模板、少样本、思维链、结构化输出 | 未知 | 2026-08-15 |
 | storyboard-prompting | 分镜帧图片提示词（Midjourney/DALL-E/SD），六段式结构保证电影感 | 未知 · SK-FTV-005 | 2026-08-15 |
 | director-shot-prompt | 导演镜头提示词：图片映射四类镜头角色，生成流畅转场视频 prompt | 本地项目 xxs-xs | 2026-08-15 |
-| ex-xiaoxiaoting | 前任 persona：分层人格设定（Layer 0-1），聊天回复风格与关系处理 | 本地项目 小小婷-Skill项目 | 2026-08-15 |
-| shot-transition-script | 首尾帧图→分镜过渡脚本：分析两帧差异，按相似度选转场策略，输出带时间戳的分镜 | 未知 | 2026-08-15 |
