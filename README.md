@@ -12,6 +12,12 @@
 ├── README.md              # 本文件：仓库说明与索引
 ├── docs/
 │   └── 调用协议.md          # agent 入库与调用规则（唯一事实源）
+├── atlas/                 # Obsidian 分类导航层（MOC）
+│   ├── 🏠 技能仓主页.md     # 主页：分类导航 + 协作组合
+│   ├── 设计创作.md          # 前端 / 视觉 / 界面
+│   ├── 视频制作.md          # 分镜 / 镜头 / 转场
+│   ├── 提示词与AI工程.md     # Prompt / Skill 创作
+│   └── 人格与社交.md        # 人格扮演 / 互动玩法
 └── skills/                # 每个子目录 = 一个打包好的 skill
     ├── <skill-name>/
     │   ├── SKILL.md       # 打包后的 skill 定义：用途 / 触发场景 / 步骤 / 示例
@@ -19,6 +25,16 @@
     │   └── ...            # 原项目关键文件（按需拷贝）
     └── README.md          # 全部 skill 的索引清单
 ```
+
+## Obsidian 使用
+
+本仓库本身就是一个 Obsidian vault（`.obsidian/` 为本地配置，不入库）：
+
+1. Obsidian → **打开文件夹作为仓库** → 选择 `Z:\chang-yong`
+2. 从 **atlas/🏠 技能仓主页** 开始浏览：分类导航 → 点进分类 → 打开 skill 的 SKILL.md
+3. 分类笔记（MOC）之间、skill 之间已用 `[[wikilink]]` 双向链接，可用**关系图谱**查看网状结构
+4. 新 skill 入库后，在对应分类笔记补一行链接（agent 会顺手做）
+5. 调整 skill 内容直接编辑 SKILL.md / SOURCE.md，Obsidian 保存即改文件
 
 ## 已收录 skill
 
