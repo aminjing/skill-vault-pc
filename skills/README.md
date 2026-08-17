@@ -27,6 +27,5 @@
 | wanxiang-portrait-skill | 万像人物：267 页蒸馏，五要素强制，四大平台通用 | xueshao1716 | 2026-08-17 |
 | image2-realistic-texture-skill | 皮肤/头发/手部真实质感配方，禁塑料皮/蜡面/磨皮 | yuyolin · MIT | 2026-08-17 |
 | real-image | believable 图像：真实互动/自然手部/抓拍感 | innovatiomentis | 2026-08-17 |
-| image2-prompt | 反恐怖谷提示词：镜头语言替代渲染词，12 流派 | shuaige121 | 2026-08-17 |
 | restore-my-beauty-punch | 人像恢复：修正畸变/光线/过度美化，还原真实 | LeiyOS | 2026-08-17 |
 | image-prompt-reverse | 图像反推提示词 + 14 惊艳增强层 + 3 变体 | luozhilzh · v1.0.1 | 2026-08-17 |
