@@ -29,3 +29,5 @@
 | real-image | believable 图像：真实互动/自然手部/抓拍感 | innovatiomentis | 2026-08-17 |
 | restore-my-beauty-punch | 人像恢复：修正畸变/光线/过度美化，还原真实 | LeiyOS | 2026-08-17 |
 | image-prompt-reverse | 图像反推提示词 + 14 惊艳增强层 + 3 变体 | luozhilzh · v1.0.1 | 2026-08-17 |
+| dr-frankenstein | 激素情绪节律：11 种"药丸"cron 模拟情绪波动，给 AI 灵魂 | brancante · 9⭐ | 2026-08-17 |
+| human-chat-operit | 真人聊天增强：4 人格+auto 情绪+反重复+禁词清单 | ElmerAlan-an · 2⭐ | 2026-08-17 |
