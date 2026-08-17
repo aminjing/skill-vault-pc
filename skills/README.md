@@ -18,3 +18,16 @@
 | cc2image | 中文配图生成器：49 套内容风格+8 套 logo 风格，知识图解/封面/批量生图，实测 5/5 | izscc · 160⭐ | 2026-08-15 |
 | power-design | 品牌原生 HTML 设计：20 条可量化幻灯片规则+25+ 品牌风格，生成不像 AI 做的 deck | ItsssssJack · 612⭐ | 2026-08-15 |
 | blcaptain-style | 中文图文卡片组图：内容→小红书/公众号卡片（静纸/证据/桥三套视觉语言），引擎渲染 | dososo · 145⭐ | 2026-08-15 |
+| folk-art-materials | 民间美术素材库：傩戏脸谱/窗花/鱼/龙 10 张 PNG，国风设计素材 | 用户收集 | 2026-08-15 |
+| talk-human | 文本真人感：声音层提取+三轮去 AI 味，AI 回复像活人 | runesleo | 2026-08-15 |
+| code-abyss | 可组合人格系统：persona+风格模块化，稳定人格层 | telagod · 237⭐ | 2026-08-15 |
+| freud-skill | 弗洛伊德认知调优：人格空间/情绪向量/内省协议 | alchaincyf · 46⭐ | 2026-08-17 |
+| skill-prompt-generator | AI 人像 Prompt 生成系统：1246 元素库+675 语料，三模式 | huangserva · 1457⭐ | 2026-08-17 |
+| nuyoah-xiezhen-prompt | 南鸢写真：妆容母体优先+皮肤防油膜，中文写真提示词 | nuyoah-ai-works · 240⭐ | 2026-08-17 |
+| wanxiang-portrait-skill | 万像人物：267 页蒸馏，五要素强制，四大平台通用 | xueshao1716 | 2026-08-17 |
+| image2-realistic-texture-skill | 皮肤/头发/手部真实质感配方，禁塑料皮/蜡面/磨皮 | yuyolin · MIT | 2026-08-17 |
+| real-image | believable 图像：真实互动/自然手部/抓拍感 | innovatiomentis | 2026-08-17 |
+| restore-my-beauty-punch | 人像恢复：修正畸变/光线/过度美化，还原真实 | LeiyOS | 2026-08-17 |
+| image-prompt-reverse | 图像反推提示词 + 14 惊艳增强层 + 3 变体 | luozhilzh · v1.0.1 | 2026-08-17 |
+| dr-frankenstein | 激素情绪节律：11 种"药丸"cron 模拟情绪波动，给 AI 灵魂 | brancante · 9⭐ | 2026-08-17 |
+| human-chat-operit | 真人聊天增强：4 人格+auto 情绪+反重复+禁词清单 | ElmerAlan-an · 2⭐ | 2026-08-17 |
