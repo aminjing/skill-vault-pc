@@ -1,0 +1,86 @@
+# Step 0 — pick a mode (you, the calling LLM, choose)
+
+Before composing any prompt, decide **what you are optimizing**. This is the single most important choice and it routes the whole prompt. There is no default — pick per task.
+
+These two modes are the field's two fundamental axes — **alignment (adherence)** vs **human preference (resonance)**. They pull in different directions; don't try to max both.
+
+## 🎯 Precise Control (精确控制) — optimize *adherence*
+The image must **obey** the prompt: exact subject, count, position, label, identity, composition.
+**Use for:** product / packshot, brand consistency, person likeness, precise multi-object scenes, anything matching a **reference image** (`--ref`), catalog/spec work.
+
+## 🌫️ Evocative (意境圆满) — optimize *resonance*
+The image must **make people feel something**: mood, story, atmosphere.
+**Use for:** editorial / hero / mood shots, brand emotion, art, anything whose job is to land emotionally.
+
+## How to choose — the subject's *story-capacity*
+- Subject **can carry a feeling** (people, scenes, evocative food) **and you want resonance** → **Evocative**.
+- Subject **can't tell a story** (isolated product, icon, diagram) **or you need exactness** → **Precise Control**.
+- Empirically, Evocative on a lone product yields "expensive emptiness"; Precise Control on a human face yields a clean but soulless headshot. Match the mode to the job.
+
+## Word budget per mode
+*(lean defaults, not hard rules — an n=3 study found the ratio effect is modest; the **direction** is the point, not the exact %. See Calibration below.)*
+
+| component | 🎯 Precise Control | 🌫️ Evocative |
+|---|---|---|
+| **Intent** — mood / message / narrative | ~15% | **~50%** |
+| **Subject** + real specifics | ~30% | ~25% |
+| **Control** — lens / light / angle | **~35%** | ~15% (1–2 anchors only) |
+| **Constraints** — banned-word avoidance | ~20% | ~10% |
+
+Keep **one subject under ~110 words** in either mode (length sweet-spot; past ~150 it dilutes to *generic*, not ugly — the model just drops the excess).
+
+## Iron rules
+- **Precise Control:** pin counts/positions explicitly; pass a reference image and use the **anti-pasted-on clause** (see each genre's img2img notes: *"preserve shape/color/proportion exactly; match lighting, scale, shadow, perspective; do not restyle"*).
+- **Evocative:** lead with the feeling; keep the **implied scene simple and renderable** — intent that forces a complex scene (boat rigging, crowds, hands, many objects) invites AI artifacts. Trust the model's defaults; under-specify on purpose (a clean 12-word evocative prompt often beats a 100-word one).
+- **Either mode:** never use render-spam — `8k, 4k, masterpiece, hyper-detailed, studio lighting, cinematic, vibrant, stunning, flawless, octane, unreal engine, award-winning`.
+
+Then go to `recipes/<genre>.md`, and compose at the **ratio your mode dictates** — the genre files give the control-layer snippets; in Evocative mode you lead with intent and borrow only one or two control anchors from them.
+
+## Calibration — what an n=3 study actually found (gpt-image-2)
+
+A 45-image study (5 subjects × 3 ratios × 3 reps, blind dual-axis VLM scoring) tempered the theory — **treat the ratios above as a lean, not a law:**
+
+- **The ratio effect is modest** (~0.3–0.7 on a 10-scale). Evocative-leaning beat control-leaning on *preference* only for subjects with a **scene/atmosphere to evoke** (street, food stall: +0.7); for isolated heroes (portrait face, landscape vista, product) all three ratios scored about the same.
+- **Intent is low-risk:** leaning intent did **not** hurt subject-fidelity/adherence (every mode 8.5–9). The earlier "intent backfires on portraits" was a single-axis scoring artifact — separate adherence from preference and it disappears.
+- **The real moderator is "is there a scene/atmosphere to evoke?"** more than raw subject type. Yes → lean Evocative. An isolated object that must be exact → lean Precise Control.
+
+**The three levers that move quality more than the ratio does:**
+1. **Never use render-spam** (`8k, vibrant, studio lighting, masterpiece`) — the only thing that scored 4/10 in any test.
+2. **Stay in the length sweet-spot** (~30–110 words for one subject; past ~150 it dilutes to *generic*, not ugly).
+3. **Lead with intent for scene/emotional shots** — a free ~0.5–0.7 preference lift where it applies, at no adherence cost.
+
+Mode choice is a fine-tune; these three are the dealmakers.
+
+## Calibration II — which *word-component* is worth the spend (exp4, 24-image)
+
+A second blind study (2 subjects: elderly fisherman + glass perfume bottle × 6 single-component additions × 2 reps; 12 rater-sheets; each component scored **against the bare base in the same set by the same rater**, so subject/rep/rater-scale cancel out). Adding ONE component sentence to a bare prompt, mean lift on overall (10-scale):
+
+| add this one sentence | overall | what it actually moves |
+|---|---|---|
+| **① concrete subject specifics** | **+1.32** | lifts *every* axis (realism +1.3, emotion +1.3, technical +1.2) — the universal win |
+| **② emotional intent** | **+0.87** | the resonance specialist: **emotion +1.8**, depth +1.1, light +1.0 — but realism only +0.1 |
+| ③ lens / depth-of-field | +0.33 | small broad lift; cheap insurance |
+| ④ texture / "real skin, grain" | +0.22 | realism +0.6 but **depth −0.4, light −0.7** — flattens the image |
+| ⑤ bare lighting spec ("soft side light from left") | **−0.12** | net-negative; the model already lights competently |
+
+**Word-spend priority (where to put the next 10 words):** ① subject specifics → ② intent → ③ lens → ④ texture (only if realism is the bottleneck) → ⑤ never bother with a standalone technical-lighting sentence.
+
+Three findings that change how you compose:
+1. **Always spend first on concrete subject specifics** — "who/what exactly" (a 70-yr-old weathered face & calloused hands / a faceted bottle, amber liquid, brushed-gold cap) is the single highest-ROI sentence and it raises *all six* quality axes at once. This is mode-independent.
+2. **Intent buys resonance, NOT realism** — it drives emotion (+1.8), and also depth & light, but barely touches realism (+0.1). This is the empirical proof of the two-mode split: want *feeling* → spend on intent (Evocative); want it to *look real/exact* → spend on subject+lens+texture (Precise Control). Don't expect intent to fix an unconvincing render.
+3. **Deliver light through intent, not through a lighting spec** — a technical light sentence alone is net-negative (−0.12), yet intent words raise the *light* axis +1.0. "the stillness of a quiet morning ritual" out-lights "soft diffused side light from the left." So: drop standalone f-stop/key-light lines; let mood/scene imply the light. (Texture words are a double-edged trade — realism up, depth & light down — use sparingly.)
+
+## Calibration III — does the *whole process* beat naive prompting? (optflow, 24-image A/B)
+
+A third blind study tested the integrated process end-to-end. 4 subjects (2 story-capable: night noodle stall, elderly potter; 2 hard objects: skeleton wristwatch, honey jar) × 3 arms × 2 reps; 12 rater-sheets; each arm scored against the others in the same subject set by the same rater. The arms:
+- **N1 bare** — "A photo of {X}." (naive minimal)
+- **N2 render-spam** — "{X}, 8k, hyperrealistic, masterpiece, studio lighting, vibrant, cinematic, award-winning…" (the common naive "more quality words = better")
+- **OPT** — composed by THIS process (subject specifics first, mode-appropriate intent, light-via-scene, one lens anchor, no render-spam)
+
+Mean overall: **OPT 7.74 > N1 bare 6.52 > N2 render-spam 5.77.** Margins: **OPT − bare = +1.21** (biggest on emotion +1.8, light +1.3); **OPT − render-spam = +1.97** (biggest on realism +2.1, emotion +1.9). OPT won outright in **9 of 12** rater cells. **The process works — and render-spam is actively worse than writing nothing.**
+
+But the 3 losses were all on ONE subject, and they teach two things:
+
+1. **Render-spam's damage is SUBJECT-CLASS-dependent — it's a people problem.** On the two human subjects it craters realism (−1.2, the plastic/over-saturated skin tell). But on the isolated hard product (the watch) render-spam scored *highest* of all three arms — "sharp / studio / vivid" happens to align with catalog aesthetics, and the model's product defaults are already commercial-grade. So refine the iron rule: **render-spam is forbidden on anything with skin or a candid scene; on a lone hard-surface product it won't wreck the shot (and the bare prompt is already near-catalog) — but it also won't express anything.**
+
+2. **Mode discipline is load-bearing, and now it has a price tag.** The single subject where OPT *lost* (the watch, **−0.88** vs the best baseline) was where the OPT prompt leaked **Evocative** elements into a **Precise** subject — a mood line ("understated calm"), window light, and shallow depth-of-field. On a pure product that sacrifices the clean clarity the shot needs, and it lost to a plain catalog render. This is the measured cost of the "Evocative-on-a-lone-product = expensive emptiness" warning. **Hard-switch for pure products: studio clarity, full/deep focus, product dead-sharp, exact spec, NO mood / window-light / shallow-DoF.** Don't moodify a subject whose job is to be seen clearly. (The process wins big on story-capable subjects: noodle stall +1.3, potter +2.3, honey jar +1.8 — all driven by emotion + light, exactly where intent pays.)

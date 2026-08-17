@@ -1,0 +1,9 @@
+# 来源
+
+- 原仓库: https://github.com/shuaige121/image2-prompt
+- 作者: shuaige121
+- 许可: LICENSE 随附
+- 入库日期: 2026-08-17
+- 归档 commit: 待提交后补
+- 原项目版本: main 最新 (clone 2026-08-17)
+- 备注: **image2-prompt**——gpt-image-2 反恐怖谷提示词库，12 摄影流派（人像/食物/产品/风景/建筑/街拍/静物/时尚/野生动物/婚礼/汽车/微距）。核心理论："像相机拍的，不像渲染的"——镜头语言（焦段+光圈+胶片+单一光源）替代 8k/vibrant/high detail 类渲染词。含 img2img 参考图模式 + findref 参考图抓取脚本。**测试状态**：实图测试因 API 风控叫停；prompts.md + recipes/ 已通读。
