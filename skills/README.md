@@ -19,3 +19,6 @@
 | power-design | 品牌原生 HTML 设计：20 条可量化幻灯片规则+25+ 品牌风格，生成不像 AI 做的 deck | ItsssssJack · 612⭐ | 2026-08-15 |
 | blcaptain-style | 中文图文卡片组图：内容→小红书/公众号卡片（静纸/证据/桥三套视觉语言），引擎渲染 | dososo · 145⭐ | 2026-08-15 |
 | folk-art-materials | 民间美术素材库：傩戏脸谱/窗花/鱼/龙 10 张 PNG，国风设计素材 | 用户收集 | 2026-08-15 |
+| talk-human | 文本真人感：声音层提取+三轮去 AI 味，AI 回复像活人 | runesleo | 2026-08-15 |
+| code-abyss | 可组合人格系统：persona+风格模块化，稳定人格层 | telagod · 237⭐ | 2026-08-15 |
+| freud-skill | 弗洛伊德认知调优：人格空间/情绪向量/内省协议 | alchaincyf · 46⭐ | 2026-08-15 |
