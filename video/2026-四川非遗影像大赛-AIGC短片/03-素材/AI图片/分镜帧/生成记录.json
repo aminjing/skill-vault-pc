@@ -1,0 +1,57 @@
+{
+  "S01_墨滴成鱼": {
+    "channel": "adobe",
+    "ref": "鱼1.png",
+    "bytes": 2438663
+  },
+  "S02_竹骨": {
+    "channel": "adobe",
+    "ref": "composer_2026-08-15_10-24-35-547_c64a18.png",
+    "bytes": 2395954
+  },
+  "S03_糊面": {
+    "channel": "adobe",
+    "ref": "composer_2026-08-15_10-24-36-012_4204f9.png",
+    "bytes": 2378390
+  },
+  "S04_墨绘锦鲤": {
+    "channel": "adobe",
+    "ref": "t3_adobe_鱼1_强化.png",
+    "bytes": 2568505
+  },
+  "S05_上油": {
+    "channel": "adobe",
+    "ref": "t3_adobe_鱼1_强化.png",
+    "bytes": 2585277
+  },
+  "S06_点睛": {
+    "channel": "adobe",
+    "ref": "鱼1.png",
+    "bytes": 2726229
+  },
+  "S07_跃出伞面": {
+    "channel": "adobe",
+    "ref": "t3_adobe_鱼1_强化.png",
+    "bytes": 2304595
+  },
+  "S08_雨巷": {
+    "channel": "adobe",
+    "ref": "composer_2026-08-15_10-17-06-884_bbaa07.png",
+    "bytes": 2611962
+  },
+  "S09_山水群鱼": {
+    "channel": "adobe",
+    "ref": "鱼1.png",
+    "bytes": 2406246
+  },
+  "S10_归位": {
+    "channel": "adobe",
+    "ref": "t3_adobe_鱼1_强化.png",
+    "bytes": 2359933
+  },
+  "S11_伞合": {
+    "channel": "adobe",
+    "ref": "composer_2026-08-15_10-17-06-884_bbaa07.png",
+    "bytes": 2260390
+  }
+}
