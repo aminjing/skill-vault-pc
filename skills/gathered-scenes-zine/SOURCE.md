@@ -4,7 +4,7 @@
 - 作者: Zeejay0
 - 许可: LICENSE 随附
 - 入库日期: 2026-08-15（2026-08-17 更新补入 morandi skill）
-- 归档 commit: 待提交后补
+- 归档 commit: 7a245bd
 - 原项目版本: main 最新 (zip 下载 2026-08-17)
 - 备注: **照片蒸馏 zine 场景 + 莫兰迪电影感海报**。三个子 skill：
   1. scene-distillation-zine-v1-3 — 照片蒸馏成 zine 场景（8-15 已入库，无变化）
