@@ -36,3 +36,6 @@ video/**/*.dll
 video/**/*.draft/
 
 .tools/
+
+# skill 本地密钥（anysearch 等），严禁提交
+skills/**/.env
