@@ -31,3 +31,4 @@
 | image-prompt-reverse | 图像反推提示词 + 14 惊艳增强层 + 3 变体 | luozhilzh · v1.0.1 | 2026-08-17 |
 | dr-frankenstein | 激素情绪节律：11 种"药丸"cron 模拟情绪波动，给 AI 灵魂 | brancante · 9⭐ | 2026-08-17 |
 | human-chat-operit | 真人聊天增强：4 人格+auto 情绪+反重复+禁词清单 | ElmerAlan-an · 2⭐ | 2026-08-17 |
+| anysearch | 统一实时搜索：web 通用+垂直域（金融/学术/社交/影视等 17 域）+批量+网页提取，JSON-RPC CLI，中文友好 ~700ms，**本仓主要搜索源**（key 存本目录 .env，gitignored） | anysearch-ai/anysearch-skill · Apache-2.0 · v3.0.1 | 2026-08-21 |
